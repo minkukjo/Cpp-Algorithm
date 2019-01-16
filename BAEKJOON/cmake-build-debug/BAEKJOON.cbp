@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/minkuk/CLionProjects/BAEKJOON/1004.cpp">
+		<Unit filename="/Users/minkuk/CLionProjects/BAEKJOON/10871.cpp">
 			<Option target="BAEKJOON"/>
 		</Unit>
 		<Unit filename="/Users/minkuk/CLionProjects/BAEKJOON/CMakeLists.txt">
