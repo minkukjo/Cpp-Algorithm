@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/BAEKJOON.dir/10871.cpp.o"
+  "CMakeFiles/BAEKJOON.dir/2448.cpp.o"
   "BAEKJOON.pdb"
   "BAEKJOON"
 )
