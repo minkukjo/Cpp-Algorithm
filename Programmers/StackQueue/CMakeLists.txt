@@ -3,4 +3,4 @@ project(STACKQUEUE)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(STACKQUEUE printer.cpp)
+add_executable(STACKQUEUE stock.cpp)

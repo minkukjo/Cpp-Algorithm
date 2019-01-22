@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/minkuk/CLionProjects/STACKQUEUE/printer.cpp" "/Users/minkuk/CLionProjects/STACKQUEUE/cmake-build-debug/CMakeFiles/STACKQUEUE.dir/printer.cpp.o"
+  "/Users/minkuk/CLionProjects/StackQueue/stock.cpp" "/Users/minkuk/CLionProjects/StackQueue/cmake-build-debug/CMakeFiles/STACKQUEUE.dir/stock.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

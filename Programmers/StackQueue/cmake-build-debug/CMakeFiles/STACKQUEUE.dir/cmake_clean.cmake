@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/STACKQUEUE.dir/printer.cpp.o"
+  "CMakeFiles/STACKQUEUE.dir/stock.cpp.o"
   "STACKQUEUE.pdb"
   "STACKQUEUE"
 )

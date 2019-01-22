@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/minkuk/CLionProjects/STACKQUEUE
+CMAKE_SOURCE_DIR = /Users/minkuk/CLionProjects/StackQueue
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/minkuk/CLionProjects/STACKQUEUE/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/minkuk/CLionProjects/StackQueue/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/minkuk/CLionProjects/STACKQUEUE/cmake-build-debug/CMakeFiles /Users/minkuk/CLionProjects/STACKQUEUE/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/minkuk/CLionProjects/StackQueue/cmake-build-debug/CMakeFiles /Users/minkuk/CLionProjects/StackQueue/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/minkuk/CLionProjects/STACKQUEUE/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/minkuk/CLionProjects/StackQueue/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ STACKQUEUE/fast:
 	$(MAKE) -f CMakeFiles/STACKQUEUE.dir/build.make CMakeFiles/STACKQUEUE.dir/build
 .PHONY : STACKQUEUE/fast
 
-printer.o: printer.cpp.o
+stock.o: stock.cpp.o
 
-.PHONY : printer.o
+.PHONY : stock.o
 
 # target to build an object file
-printer.cpp.o:
-	$(MAKE) -f CMakeFiles/STACKQUEUE.dir/build.make CMakeFiles/STACKQUEUE.dir/printer.cpp.o
-.PHONY : printer.cpp.o
+stock.cpp.o:
+	$(MAKE) -f CMakeFiles/STACKQUEUE.dir/build.make CMakeFiles/STACKQUEUE.dir/stock.cpp.o
+.PHONY : stock.cpp.o
 
-printer.i: printer.cpp.i
+stock.i: stock.cpp.i
 
-.PHONY : printer.i
+.PHONY : stock.i
 
 # target to preprocess a source file
-printer.cpp.i:
-	$(MAKE) -f CMakeFiles/STACKQUEUE.dir/build.make CMakeFiles/STACKQUEUE.dir/printer.cpp.i
-.PHONY : printer.cpp.i
+stock.cpp.i:
+	$(MAKE) -f CMakeFiles/STACKQUEUE.dir/build.make CMakeFiles/STACKQUEUE.dir/stock.cpp.i
+.PHONY : stock.cpp.i
 
-printer.s: printer.cpp.s
+stock.s: stock.cpp.s
 
-.PHONY : printer.s
+.PHONY : stock.s
 
 # target to generate assembly for a file
-printer.cpp.s:
-	$(MAKE) -f CMakeFiles/STACKQUEUE.dir/build.make CMakeFiles/STACKQUEUE.dir/printer.cpp.s
-.PHONY : printer.cpp.s
+stock.cpp.s:
+	$(MAKE) -f CMakeFiles/STACKQUEUE.dir/build.make CMakeFiles/STACKQUEUE.dir/stock.cpp.s
+.PHONY : stock.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... STACKQUEUE"
-	@echo "... printer.o"
-	@echo "... printer.i"
-	@echo "... printer.s"
+	@echo "... stock.o"
+	@echo "... stock.i"
+	@echo "... stock.s"
 .PHONY : help
 
 

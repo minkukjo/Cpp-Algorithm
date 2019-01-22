@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/STACKQUEUE/printer.cpp
+/Users/minkuk/CLionProjects/StackQueue/stock.cpp
 iostream
 -
 string
 -
 vector
 -
-algorithm
--
-deque
+queue
 -
 
