@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/minkuk/CLionProjects/BAEKJOON
+CMAKE_SOURCE_DIR = /Users/minkuk/CLionProjects/HEAP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/minkuk/CLionProjects/BAEKJOON/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/minkuk/CLionProjects/HEAP/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/minkuk/CLionProjects/BAEKJOON/cmake-build-debug/CMakeFiles /Users/minkuk/CLionProjects/BAEKJOON/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/minkuk/CLionProjects/HEAP/cmake-build-debug/CMakeFiles /Users/minkuk/CLionProjects/HEAP/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/minkuk/CLionProjects/BAEKJOON/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/minkuk/CLionProjects/HEAP/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BAEKJOON
+# Target rules for targets named HEAP
 
 # Build rule for target.
-BAEKJOON: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BAEKJOON
-.PHONY : BAEKJOON
+HEAP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HEAP
+.PHONY : HEAP
 
 # fast build rule for target.
-BAEKJOON/fast:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/build
-.PHONY : BAEKJOON/fast
+HEAP/fast:
+	$(MAKE) -f CMakeFiles/HEAP.dir/build.make CMakeFiles/HEAP.dir/build
+.PHONY : HEAP/fast
 
-1193.o: 1193.cpp.o
+Disk.o: Disk.cpp.o
 
-.PHONY : 1193.o
+.PHONY : Disk.o
 
 # target to build an object file
-1193.cpp.o:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/1193.cpp.o
-.PHONY : 1193.cpp.o
+Disk.cpp.o:
+	$(MAKE) -f CMakeFiles/HEAP.dir/build.make CMakeFiles/HEAP.dir/Disk.cpp.o
+.PHONY : Disk.cpp.o
 
-1193.i: 1193.cpp.i
+Disk.i: Disk.cpp.i
 
-.PHONY : 1193.i
+.PHONY : Disk.i
 
 # target to preprocess a source file
-1193.cpp.i:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/1193.cpp.i
-.PHONY : 1193.cpp.i
+Disk.cpp.i:
+	$(MAKE) -f CMakeFiles/HEAP.dir/build.make CMakeFiles/HEAP.dir/Disk.cpp.i
+.PHONY : Disk.cpp.i
 
-1193.s: 1193.cpp.s
+Disk.s: Disk.cpp.s
 
-.PHONY : 1193.s
+.PHONY : Disk.s
 
 # target to generate assembly for a file
-1193.cpp.s:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/1193.cpp.s
-.PHONY : 1193.cpp.s
+Disk.cpp.s:
+	$(MAKE) -f CMakeFiles/HEAP.dir/build.make CMakeFiles/HEAP.dir/Disk.cpp.s
+.PHONY : Disk.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... BAEKJOON"
-	@echo "... 1193.o"
-	@echo "... 1193.i"
-	@echo "... 1193.s"
+	@echo "... HEAP"
+	@echo "... Disk.o"
+	@echo "... Disk.i"
+	@echo "... Disk.s"
 .PHONY : help
 
 
