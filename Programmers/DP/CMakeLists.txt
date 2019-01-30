@@ -3,4 +3,4 @@ project(DP)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DP School.cpp)
+add_executable(DP Seoul.cpp)

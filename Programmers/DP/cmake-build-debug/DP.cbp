@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/minkuk/CLionProjects/DP/School.cpp">
+		<Unit filename="/Users/minkuk/CLionProjects/DP/Seoul.cpp">
 			<Option target="DP"/>
 		</Unit>
 		<Unit filename="/Users/minkuk/CLionProjects/DP/CMakeLists.txt">

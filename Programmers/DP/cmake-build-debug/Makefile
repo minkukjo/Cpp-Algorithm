@@ -123,32 +123,32 @@ DP/fast:
 	$(MAKE) -f CMakeFiles/DP.dir/build.make CMakeFiles/DP.dir/build
 .PHONY : DP/fast
 
-School.o: School.cpp.o
+Seoul.o: Seoul.cpp.o
 
-.PHONY : School.o
+.PHONY : Seoul.o
 
 # target to build an object file
-School.cpp.o:
-	$(MAKE) -f CMakeFiles/DP.dir/build.make CMakeFiles/DP.dir/School.cpp.o
-.PHONY : School.cpp.o
+Seoul.cpp.o:
+	$(MAKE) -f CMakeFiles/DP.dir/build.make CMakeFiles/DP.dir/Seoul.cpp.o
+.PHONY : Seoul.cpp.o
 
-School.i: School.cpp.i
+Seoul.i: Seoul.cpp.i
 
-.PHONY : School.i
+.PHONY : Seoul.i
 
 # target to preprocess a source file
-School.cpp.i:
-	$(MAKE) -f CMakeFiles/DP.dir/build.make CMakeFiles/DP.dir/School.cpp.i
-.PHONY : School.cpp.i
+Seoul.cpp.i:
+	$(MAKE) -f CMakeFiles/DP.dir/build.make CMakeFiles/DP.dir/Seoul.cpp.i
+.PHONY : Seoul.cpp.i
 
-School.s: School.cpp.s
+Seoul.s: Seoul.cpp.s
 
-.PHONY : School.s
+.PHONY : Seoul.s
 
 # target to generate assembly for a file
-School.cpp.s:
-	$(MAKE) -f CMakeFiles/DP.dir/build.make CMakeFiles/DP.dir/School.cpp.s
-.PHONY : School.cpp.s
+Seoul.cpp.s:
+	$(MAKE) -f CMakeFiles/DP.dir/build.make CMakeFiles/DP.dir/Seoul.cpp.s
+.PHONY : Seoul.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... DP"
-	@echo "... School.o"
-	@echo "... School.i"
-	@echo "... School.s"
+	@echo "... Seoul.o"
+	@echo "... Seoul.i"
+	@echo "... Seoul.s"
 .PHONY : help
 
 

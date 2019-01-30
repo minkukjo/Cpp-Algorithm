@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/DP/School.cpp
+/Users/minkuk/CLionProjects/DP/Seoul.cpp
 iostream
 -
 string
 -
 vector
+-
+cmath
 -
 
