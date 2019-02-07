@@ -6,53 +6,32 @@
 #include <string>
 #include <vector>
 #include <cmath>
+#include <algorithm>
+
+// max_element()의 발견
 
 using namespace std;
 
-int DP[105][100005];
+int DP[105][100035];
 int solution(int K, vector<vector<int>> travel) {
     int answer = 0;
 
-    if(travel[0][0] <= K)
-    {
-        DP[0][travel[0][0]] = max(DP[0][travel[0][0]],travel[0][1]);
-    }
-    if(travel[0][2]<=K)
-    {
-        DP[0][travel[0][2]] = max(DP[0][travel[0][2]],travel[0][3]);
-    }
+    DP[0][travel[0][0]] = travel[0][1];
+    DP[0][travel[0][2]] = travel[0][3];
 
-    for(int i=0; i<travel.size()-1; i++)
+    for(int i=1; i<travel.size(); i++)
     {
-        for(int j=0; j<=K; j++)
+        for(int j=0; j<K; j++)
         {
-            if(DP[i][j] != 0)
+            if(DP[i-1][j] != 0)
             {
-                int compare = j + travel[i+1][0];
-                if(compare<=K)
-                {
-                    DP[i+1][compare] = max(DP[i+1][compare],DP[i][j]+travel[i+1][1]);
-                    compare = j + travel[i+1][2];
-                }
-
-                if(compare<=K)
-                {
-                    DP[i+1][compare] = max(DP[i+1][compare],DP[i][j]+travel[i+1][3]);
-                }
+                DP[i][j + travel[i][0]] = max(DP[i][j + travel[i][0]],DP[i-1][j]+travel[i][1]);
+                DP[i][j + travel[i][2]] = max(DP[i][j + travel[i][2]],DP[i-1][j]+travel[i][3]);
             }
         }
     }
 
-    for(int i=0; i<=K; i++)
-    {
-        if(DP[travel.size()-1][i] > answer)
-        {
-            answer = DP[travel.size()-1][i];
-        }
-    }
-
-    cout << answer << endl;
-
+    answer = *max_element(DP[travel.size()-1],DP[travel.size()-1]+K+1);
 
     return answer;
 }
@@ -66,5 +45,12 @@ int main()
             {900,1800,400,700},
             {1200,2300,500,1200}
     };
+
+//    int K = 1650;
+//    vector<vector<int>> travel = {
+//            {500,200,200,100},
+//            {800,370,300,120},
+//            {700,250,300,90}
+//    };
     solution(K,travel);
 }
