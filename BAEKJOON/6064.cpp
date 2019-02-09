@@ -6,21 +6,55 @@
 
 using namespace std;
 
+// 유클리드 호제법을 이용한 최대공약수 구하는 함수
+int gcd(int a, int b)
+{
+    while(b>0)
+    {
+        int temp = a;
+        a = b;
+        b = temp%b;
+    }
+    return a;
+}
+
+// a*b를 최대공약수로 나눠서 최소공배수를 찾아줌.
+
+int lcm(int a, int b)
+{
+    return a*b/gcd(a,b);
+}
+
 int main()
 {
     int t;
     cin >> t;
     while(t--)
     {
-        int x;
-        int y;
         int M;
         int N;
-//        int year = 1;
-//        int now_x = 1;
-//        int now_y = 1;
-//        cin >> x >> y >> M >> N;
-//
+        int x;
+        int y;
+        cin >> M >> N >> x >> y;
+
+        int count = x % (M+1);
+        int tempy = x;
+
+        for(int i=0; i<N; i++)
+        {
+            int temp = tempy % N == 0 ? N : tempy % N;
+            if(temp == y)
+            {
+                break;
+            }
+            tempy = temp + M;
+            count += M;
+        }
+        int answer = count > lcm(M,N) ? -1 : count;
+        cout << answer << endl;
+
+
+//        시간초과남 이렇게 짜면 O(MN)이 됌.
 //        while(true)
 //        {
 //            if( (now_x == M) && (now_y == N) )
@@ -57,6 +91,8 @@ int main()
 //
 //
 //        }
+
+
 
 
 
