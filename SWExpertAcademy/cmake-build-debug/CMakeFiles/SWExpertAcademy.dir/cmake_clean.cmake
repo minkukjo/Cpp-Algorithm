@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SWExpertAcademy.dir/cell.cpp.o"
+  "CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o"
   "SWExpertAcademy.pdb"
   "SWExpertAcademy"
 )

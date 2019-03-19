@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/SWExpertAcademy/cell.cpp
+/Users/minkuk/CLionProjects/SWExpertAcademy/DIY.cpp
 iostream
 -
-fstream
--
-string
+queue
 -
 

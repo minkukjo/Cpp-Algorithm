@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/minkuk/CLionProjects/SWExpertAcademy/cell.cpp">
+		<Unit filename="/Users/minkuk/CLionProjects/SWExpertAcademy/DIY.cpp">
 			<Option target="SWExpertAcademy"/>
 		</Unit>
 		<Unit filename="/Users/minkuk/CLionProjects/SWExpertAcademy/CMakeLists.txt">
