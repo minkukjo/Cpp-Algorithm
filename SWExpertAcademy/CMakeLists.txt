@@ -3,4 +3,4 @@ project(SWExpertAcademy)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SWExpertAcademy DIY.cpp)
+add_executable(SWExpertAcademy Russia.cpp)

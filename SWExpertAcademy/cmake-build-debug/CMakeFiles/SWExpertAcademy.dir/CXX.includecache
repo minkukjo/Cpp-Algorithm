@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/SWExpertAcademy/DIY.cpp
+/Users/minkuk/CLionProjects/SWExpertAcademy/Russia.cpp
 iostream
 -
-queue
+cstring
+-
+algorithm
 -
 

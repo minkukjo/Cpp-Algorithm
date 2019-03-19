@@ -57,27 +57,27 @@ include CMakeFiles/SWExpertAcademy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SWExpertAcademy.dir/flags.make
 
-CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o: CMakeFiles/SWExpertAcademy.dir/flags.make
-CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o: ../DIY.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minkuk/CLionProjects/SWExpertAcademy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o -c /Users/minkuk/CLionProjects/SWExpertAcademy/DIY.cpp
+CMakeFiles/SWExpertAcademy.dir/Russia.cpp.o: CMakeFiles/SWExpertAcademy.dir/flags.make
+CMakeFiles/SWExpertAcademy.dir/Russia.cpp.o: ../Russia.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minkuk/CLionProjects/SWExpertAcademy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SWExpertAcademy.dir/Russia.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SWExpertAcademy.dir/Russia.cpp.o -c /Users/minkuk/CLionProjects/SWExpertAcademy/Russia.cpp
 
-CMakeFiles/SWExpertAcademy.dir/DIY.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SWExpertAcademy.dir/DIY.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minkuk/CLionProjects/SWExpertAcademy/DIY.cpp > CMakeFiles/SWExpertAcademy.dir/DIY.cpp.i
+CMakeFiles/SWExpertAcademy.dir/Russia.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SWExpertAcademy.dir/Russia.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minkuk/CLionProjects/SWExpertAcademy/Russia.cpp > CMakeFiles/SWExpertAcademy.dir/Russia.cpp.i
 
-CMakeFiles/SWExpertAcademy.dir/DIY.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SWExpertAcademy.dir/DIY.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minkuk/CLionProjects/SWExpertAcademy/DIY.cpp -o CMakeFiles/SWExpertAcademy.dir/DIY.cpp.s
+CMakeFiles/SWExpertAcademy.dir/Russia.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SWExpertAcademy.dir/Russia.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minkuk/CLionProjects/SWExpertAcademy/Russia.cpp -o CMakeFiles/SWExpertAcademy.dir/Russia.cpp.s
 
 # Object files for target SWExpertAcademy
 SWExpertAcademy_OBJECTS = \
-"CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o"
+"CMakeFiles/SWExpertAcademy.dir/Russia.cpp.o"
 
 # External object files for target SWExpertAcademy
 SWExpertAcademy_EXTERNAL_OBJECTS =
 
-SWExpertAcademy: CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o
+SWExpertAcademy: CMakeFiles/SWExpertAcademy.dir/Russia.cpp.o
 SWExpertAcademy: CMakeFiles/SWExpertAcademy.dir/build.make
 SWExpertAcademy: CMakeFiles/SWExpertAcademy.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/minkuk/CLionProjects/SWExpertAcademy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SWExpertAcademy"

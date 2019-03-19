@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o"
+  "CMakeFiles/SWExpertAcademy.dir/Russia.cpp.o"
   "SWExpertAcademy.pdb"
   "SWExpertAcademy"
 )

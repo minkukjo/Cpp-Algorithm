@@ -123,32 +123,32 @@ SWExpertAcademy/fast:
 	$(MAKE) -f CMakeFiles/SWExpertAcademy.dir/build.make CMakeFiles/SWExpertAcademy.dir/build
 .PHONY : SWExpertAcademy/fast
 
-DIY.o: DIY.cpp.o
+Russia.o: Russia.cpp.o
 
-.PHONY : DIY.o
+.PHONY : Russia.o
 
 # target to build an object file
-DIY.cpp.o:
-	$(MAKE) -f CMakeFiles/SWExpertAcademy.dir/build.make CMakeFiles/SWExpertAcademy.dir/DIY.cpp.o
-.PHONY : DIY.cpp.o
+Russia.cpp.o:
+	$(MAKE) -f CMakeFiles/SWExpertAcademy.dir/build.make CMakeFiles/SWExpertAcademy.dir/Russia.cpp.o
+.PHONY : Russia.cpp.o
 
-DIY.i: DIY.cpp.i
+Russia.i: Russia.cpp.i
 
-.PHONY : DIY.i
+.PHONY : Russia.i
 
 # target to preprocess a source file
-DIY.cpp.i:
-	$(MAKE) -f CMakeFiles/SWExpertAcademy.dir/build.make CMakeFiles/SWExpertAcademy.dir/DIY.cpp.i
-.PHONY : DIY.cpp.i
+Russia.cpp.i:
+	$(MAKE) -f CMakeFiles/SWExpertAcademy.dir/build.make CMakeFiles/SWExpertAcademy.dir/Russia.cpp.i
+.PHONY : Russia.cpp.i
 
-DIY.s: DIY.cpp.s
+Russia.s: Russia.cpp.s
 
-.PHONY : DIY.s
+.PHONY : Russia.s
 
 # target to generate assembly for a file
-DIY.cpp.s:
-	$(MAKE) -f CMakeFiles/SWExpertAcademy.dir/build.make CMakeFiles/SWExpertAcademy.dir/DIY.cpp.s
-.PHONY : DIY.cpp.s
+Russia.cpp.s:
+	$(MAKE) -f CMakeFiles/SWExpertAcademy.dir/build.make CMakeFiles/SWExpertAcademy.dir/Russia.cpp.s
+.PHONY : Russia.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SWExpertAcademy"
-	@echo "... DIY.o"
-	@echo "... DIY.i"
-	@echo "... DIY.s"
+	@echo "... Russia.o"
+	@echo "... Russia.i"
+	@echo "... Russia.s"
 .PHONY : help
 
 
