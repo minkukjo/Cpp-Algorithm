@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/BAEKJOON/10989.cpp
+/Users/minkuk/CLionProjects/BAEKJOON/7569.cpp
 iostream
 -
-algorithm
+queue
 -
 
