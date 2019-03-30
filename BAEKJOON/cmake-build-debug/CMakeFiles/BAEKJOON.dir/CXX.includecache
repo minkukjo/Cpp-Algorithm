@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/BAEKJOON/14891.cpp
-cstdio
+/Users/minkuk/CLionProjects/BAEKJOON/10451.cpp
+iostream
+-
+cstring
 -
 
