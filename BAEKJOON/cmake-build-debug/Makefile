@@ -123,32 +123,59 @@ BAEKJOON/fast:
 	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/build
 .PHONY : BAEKJOON/fast
 
-10451.o: 10451.cpp.o
+12100.o: 12100.cpp.o
 
-.PHONY : 10451.o
+.PHONY : 12100.o
 
 # target to build an object file
-10451.cpp.o:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/10451.cpp.o
-.PHONY : 10451.cpp.o
+12100.cpp.o:
+	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/12100.cpp.o
+.PHONY : 12100.cpp.o
 
-10451.i: 10451.cpp.i
+12100.i: 12100.cpp.i
 
-.PHONY : 10451.i
+.PHONY : 12100.i
 
 # target to preprocess a source file
-10451.cpp.i:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/10451.cpp.i
-.PHONY : 10451.cpp.i
+12100.cpp.i:
+	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/12100.cpp.i
+.PHONY : 12100.cpp.i
 
-10451.s: 10451.cpp.s
+12100.s: 12100.cpp.s
 
-.PHONY : 10451.s
+.PHONY : 12100.s
 
 # target to generate assembly for a file
-10451.cpp.s:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/10451.cpp.s
-.PHONY : 10451.cpp.s
+12100.cpp.s:
+	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/12100.cpp.s
+.PHONY : 12100.cpp.s
+
+13460.o: 13460.cpp.o
+
+.PHONY : 13460.o
+
+# target to build an object file
+13460.cpp.o:
+	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/13460.cpp.o
+.PHONY : 13460.cpp.o
+
+13460.i: 13460.cpp.i
+
+.PHONY : 13460.i
+
+# target to preprocess a source file
+13460.cpp.i:
+	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/13460.cpp.i
+.PHONY : 13460.cpp.i
+
+13460.s: 13460.cpp.s
+
+.PHONY : 13460.s
+
+# target to generate assembly for a file
+13460.cpp.s:
+	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/13460.cpp.s
+.PHONY : 13460.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BAEKJOON"
-	@echo "... 10451.o"
-	@echo "... 10451.i"
-	@echo "... 10451.s"
+	@echo "... 12100.o"
+	@echo "... 12100.i"
+	@echo "... 12100.s"
+	@echo "... 13460.o"
+	@echo "... 13460.i"
+	@echo "... 13460.s"
 .PHONY : help
 
 

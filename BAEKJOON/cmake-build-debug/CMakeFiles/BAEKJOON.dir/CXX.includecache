@@ -6,8 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/BAEKJOON/10451.cpp
+/Users/minkuk/CLionProjects/BAEKJOON/13460.cpp
 iostream
+-
+queue
 -
 cstring
 -
