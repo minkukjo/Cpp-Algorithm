@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <queue>
+#include <cstring>
 
 using namespace std;
 
@@ -26,97 +27,111 @@ int n;
 queue<bam> q;
 // 시간과 방향 저장
 vector<pair<int,char>> d;
+int ans = 0;
 
-void bfs()
+void print()
 {
-    int time = 1;
-    int turn_count = 0;
-
-    while(!q.empty())
+    cout << endl;
+    for(int i=1; i<=n; i++)
     {
-        int size = q.size();
-
-        for(int i=0; i<size; i++)
+        for(int j=1; j<=n; j++)
         {
-            int x = q.front().x;
-            int y = q.front().y;
-            char dir = q.front().dir;
-            visit[x][y] = true;
-            q.pop();
-
-            if(i==0 && d[turn_count].first == time)
-            {
-                dir = d[turn_count++].second;
-            }
-
-            if(dir == 'R')
-            {
-                // 뱀이 벽에 대가리를 박거나, 자기 몸을 밟을 경우 에러표시
-                if(x+1 > n && visit[x+1][y])
-                {
-                    return;
-                }
-
-                // 이동시 꼬리를 비워줘야함.
-                if(map[x+1][y] == 1)
-                {
-                    q.push(bam(x,y,dir));
-                }
-
-
-                visit[x][y] = false;
-                visit[x+1][y] = true;
-                q.push(bam(x+1,y,dir));
-            }
-            else if(dir=='L')
-            {
-
-            }
-            else if(dir =='U')
-            {
-
-            }
-            else if(dir == 'D')
-            {
-                // 뱀이 벽에 대가리를 박거나, 자기 몸을 밟을 경우 에러표시
-                if(y+1 > n && visit[x][y+1])
-                {
-                    return;
-                }
-
-                // 이동시 꼬리를 비워줘야함.
-                if(map[x][y+1] == 1)
-                {
-                    q.push(bam(x,y,dir));
-                }
-                else
-                {
-                    while(!q.empty())
-                    {
-                        int t_size = q.size();
-
-                        char h_dir = dir;
-
-                        for(int i=0; i<t_size; i++)
-                        {
-                            int t_x = q.front().x;
-                            int t_y = q.front().y;
-                            char t_dir = h_dir;
-                            h_dir = q.front().dir;
-                            q.pop();
-                        }
-
-                    }
-                }
-
-                visit[x][y] = false;
-                visit[x][y+1] = true;
-                q.push(bam(x,y+1,dir));
-            }
-
+            printf("%d ",visit[i][j]);
         }
+        cout << endl;
+    }
+}
 
-        time++;
+
+void dfs(int x,int y, char dir,int time,unsigned int count)
+{
+    if(x>n || y>n || x<1 || y<1 || visit[x][y])
+    {
+        ans = time;
+        return;
+    }
+    q.push(bam(x,y,dir));
+    visit[x][y] = true;
+
+    //print();
+
+    if(map[x][y] == 1)
+    {
+        visit[x][y] = true;
+        map[x][y] = 0;
+    }
+    else
+    {
+        int temp_x = q.front().x;
+        int temp_y = q.front().y;
+        visit[temp_x][temp_y] = false;
+        q.pop();
+    }
+
+    //print();
+
+
+
+    if(count <= d.size())
+    {
+        if(time == d[count].first)
+        {
+            if(dir == 'U' && d[count].second == 'L')
+            {
+                dir = 'L';
+            }
+            else if(dir == 'U' && d[count].second == 'D')
+            {
+                dir = 'R';
+            }
+            else if(dir == 'R' && d[count].second == 'L')
+            {
+                dir = 'U';
+            }
+            else if(dir == 'R' && d[count].second == 'D')
+            {
+                dir = 'D';
+            }
+            else if(dir == 'L' && d[count].second == 'L')
+            {
+                dir = 'D';
+            }
+            else if(dir == 'L' && d[count].second == 'D')
+            {
+                dir = 'U';
+            }
+            else if(dir == 'D' && d[count].second == 'L')
+            {
+                dir = 'R';
+            }
+            else if(dir == 'D' && d[count].second == 'D')
+            {
+                dir = 'L';
+            }
+
+            count++;
+        }
+    }
+
+
+
+    if(dir == 'U')
+    {
+        dfs(x-1,y,dir,time+1,count);
+    }
+    else if(dir == 'L')
+    {
+
+        dfs(x,y-1,dir,time+1,count);
+    }
+    else if(dir == 'R')
+    {
+
+        dfs(x,y+1,dir,time+1,count);
+    }
+    else if(dir=='D')
+    {
+        dfs(x+1,y,dir,time+1,count);
     }
 }
 
@@ -159,6 +174,9 @@ int main()
     }
 
 
+    dfs(1,1,'R',0,0);
+
+    cout << ans;
 
 
 

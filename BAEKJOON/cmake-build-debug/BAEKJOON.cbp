@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/minkuk/CLionProjects/BAEKJOON/10026.cpp">
-			<Option target="BAEKJOON"/>
-		</Unit>
 		<Unit filename="/Users/minkuk/CLionProjects/BAEKJOON/3190.cpp">
 			<Option target="BAEKJOON"/>
 		</Unit>

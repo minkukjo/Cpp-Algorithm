@@ -123,33 +123,6 @@ BAEKJOON/fast:
 	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/build
 .PHONY : BAEKJOON/fast
 
-10026.o: 10026.cpp.o
-
-.PHONY : 10026.o
-
-# target to build an object file
-10026.cpp.o:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/10026.cpp.o
-.PHONY : 10026.cpp.o
-
-10026.i: 10026.cpp.i
-
-.PHONY : 10026.i
-
-# target to preprocess a source file
-10026.cpp.i:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/10026.cpp.i
-.PHONY : 10026.cpp.i
-
-10026.s: 10026.cpp.s
-
-.PHONY : 10026.s
-
-# target to generate assembly for a file
-10026.cpp.s:
-	$(MAKE) -f CMakeFiles/BAEKJOON.dir/build.make CMakeFiles/BAEKJOON.dir/10026.cpp.s
-.PHONY : 10026.cpp.s
-
 3190.o: 3190.cpp.o
 
 .PHONY : 3190.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BAEKJOON"
-	@echo "... 10026.o"
-	@echo "... 10026.i"
-	@echo "... 10026.s"
 	@echo "... 3190.o"
 	@echo "... 3190.i"
 	@echo "... 3190.s"
