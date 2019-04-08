@@ -57,27 +57,27 @@ include CMakeFiles/BAEKJOON.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/BAEKJOON.dir/flags.make
 
-CMakeFiles/BAEKJOON.dir/14501.cpp.o: CMakeFiles/BAEKJOON.dir/flags.make
-CMakeFiles/BAEKJOON.dir/14501.cpp.o: ../14501.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minkuk/CLionProjects/BAEKJOON/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BAEKJOON.dir/14501.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BAEKJOON.dir/14501.cpp.o -c /Users/minkuk/CLionProjects/BAEKJOON/14501.cpp
+CMakeFiles/BAEKJOON.dir/14503.cpp.o: CMakeFiles/BAEKJOON.dir/flags.make
+CMakeFiles/BAEKJOON.dir/14503.cpp.o: ../14503.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/minkuk/CLionProjects/BAEKJOON/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BAEKJOON.dir/14503.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BAEKJOON.dir/14503.cpp.o -c /Users/minkuk/CLionProjects/BAEKJOON/14503.cpp
 
-CMakeFiles/BAEKJOON.dir/14501.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BAEKJOON.dir/14501.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minkuk/CLionProjects/BAEKJOON/14501.cpp > CMakeFiles/BAEKJOON.dir/14501.cpp.i
+CMakeFiles/BAEKJOON.dir/14503.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BAEKJOON.dir/14503.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/minkuk/CLionProjects/BAEKJOON/14503.cpp > CMakeFiles/BAEKJOON.dir/14503.cpp.i
 
-CMakeFiles/BAEKJOON.dir/14501.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BAEKJOON.dir/14501.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minkuk/CLionProjects/BAEKJOON/14501.cpp -o CMakeFiles/BAEKJOON.dir/14501.cpp.s
+CMakeFiles/BAEKJOON.dir/14503.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BAEKJOON.dir/14503.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/minkuk/CLionProjects/BAEKJOON/14503.cpp -o CMakeFiles/BAEKJOON.dir/14503.cpp.s
 
 # Object files for target BAEKJOON
 BAEKJOON_OBJECTS = \
-"CMakeFiles/BAEKJOON.dir/14501.cpp.o"
+"CMakeFiles/BAEKJOON.dir/14503.cpp.o"
 
 # External object files for target BAEKJOON
 BAEKJOON_EXTERNAL_OBJECTS =
 
-BAEKJOON: CMakeFiles/BAEKJOON.dir/14501.cpp.o
+BAEKJOON: CMakeFiles/BAEKJOON.dir/14503.cpp.o
 BAEKJOON: CMakeFiles/BAEKJOON.dir/build.make
 BAEKJOON: CMakeFiles/BAEKJOON.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/minkuk/CLionProjects/BAEKJOON/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable BAEKJOON"
