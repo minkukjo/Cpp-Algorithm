@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/BAEKJOON/14503.cpp
+/Users/minkuk/CLionProjects/BAEKJOON/14889.cpp
 iostream
+-
+cstring
+-
+cmath
 -
 
