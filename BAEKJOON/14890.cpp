@@ -13,37 +13,14 @@ int N;
 int L;
 int ans;
 
-bool col_check(int x, int y)
-{
-    for(int i=0;)
-}
 
-bool col(int cur_col)
-{
-    for(int i=0; i<N-1; i++)
-    {
-        if( (abs(map[i][cur_col] - map[i+1][cur_col]) == 1) && map[i][cur_col] > map[i+1][cur_col] )
-        {
-            if(col_check(cur_col,i+1))
-            {
 
-            }
-        }
-    }
-}
 
-void solve()
-{
-    for(int i=0; i<N; i++)
-    {
-        ans += col(i);
-    }
-}
+
 
 int main()
 {
 
-    int combo_count = 0;
     cin >> N >> L;
 
     for(int i=0; i<N; i++)
@@ -54,6 +31,9 @@ int main()
         }
     }
 
+    solve();
+
+    cout << ans << endl;
 
     return 0;
 }
