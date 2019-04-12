@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/minkuk/CLionProjects/BAEKJOON/2747.cpp
+/Users/minkuk/CLionProjects/BAEKJOON/16234.cpp
 iostream
+-
+queue
+-
+vector
 -
 
