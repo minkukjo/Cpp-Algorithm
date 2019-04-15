@@ -35,23 +35,35 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5373.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="2400">
               <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/16234.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
+            <state relative-caret-position="1350">
               <caret line="90" column="17" selection-end-line="92" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/16236.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+              <folding>
+                <element signature="e#40#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/14891.cpp" />
         <option value="$PROJECT_DIR$/2178.cpp" />
         <option value="$PROJECT_DIR$/2606.cpp" />
         <option value="$PROJECT_DIR$/2667.cpp" />
@@ -125,14 +136,15 @@
         <option value="$PROJECT_DIR$/9325.cpp" />
         <option value="$PROJECT_DIR$/2747.cpp" />
         <option value="$PROJECT_DIR$/5373.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/16234.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/16236.cpp" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="974" />
+    <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectView">
@@ -251,17 +263,19 @@
       <workItem from="1554961268692" duration="29534000" />
       <workItem from="1555059528127" duration="129000" />
       <workItem from="1555059708045" duration="29359000" />
+      <workItem from="1555208194457" duration="5106000" />
+      <workItem from="1555329989663" duration="203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343924000" />
+    <option name="totallyTimeSpent" value="349233000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.28513733" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.29402262" />
       <window_info id="Structure" order="1" sideWeight="0.50121653" side_tool="true" weight="0.2980614" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -834,14 +848,33 @@
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="map" language="ObjectiveC" />
-        <watch expression="sum" language="ObjectiveC" />
-        <watch expression="ans" language="ObjectiveC" />
-        <watch expression="visit" language="ObjectiveC" />
+        <watch expression="pos" language="ObjectiveC" />
+        <watch expression="map[nx][ny]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>map[nx][ny]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>q.size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pos</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sort</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>visit</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -872,31 +905,9 @@
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>ans</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>sum</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>map[x][y]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/deque">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27345">
-          <caret line="1823" selection-start-line="1823" selection-end-line="1823" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6945">
@@ -1246,8 +1257,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5373.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="2400">
           <caret line="160" column="17" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16234.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="90" column="17" selection-end-line="92" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,12 +1279,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/16234.cpp">
+    <entry file="file://$PROJECT_DIR$/16236.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="90" column="17" selection-end-line="92" selection-end-column="1" />
+        <state relative-caret-position="236">
+          <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#40#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
