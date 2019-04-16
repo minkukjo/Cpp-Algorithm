@@ -3,4 +3,4 @@ project(BAEKJOON)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BAEKJOON 16236.cpp)
+add_executable(BAEKJOON 16235.cpp)
