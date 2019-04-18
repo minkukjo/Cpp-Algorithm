@@ -1,11 +1,8 @@
-//
-// Created by 조민국 on 2019-04-14.
-//
-
 #include <iostream>
-#include <vector>
-#include <algorithm>
 #include <queue>
+#include <vector>
+#include <cstring>
+#include <algorithm>
 
 using namespace std;
 
@@ -14,131 +11,130 @@ class fish
 public:
     int x;
     int y;
-    int s;
-    int t;
-    int e;
-    fish(int a,int b,int c,int d,int e):x(a),y(b),s(c),t(d),e(e){};
+    int t; // 시간
+    int s; // 몸집
+    int e; // 얼마나 먹었는지
+    fish(int a,int b,int c, int d, int e):x(a),y(b),t(c),s(d),e(e){};
 };
 
-int map[21][21];
-bool visit[21][21];
+queue<fish> q;
+vector<fish> v;
 int dx[4] = {0,0,1,-1};
 int dy[4] = {1,-1,0,0};
-int N;
+bool visit[21][21];
 int ans;
+int N;
+int map[21][21];
 
-queue<fish> q;
-vector<fish> pos;
-
-bool compare(fish a, fish b)
+bool compare(fish a , fish b)
 {
-    if(a.s < b.s)
+    if(a.t <= b.t)
     {
-        return true;
-    }
-    else if(a.s == b.s)
-    {
-        if(a.x < b.x)
+        if(a.t == b.t)
         {
-            return true;
-        }
-        else if(a.x == b.x)
-        {
-            if(a.y < b.y)
+            if(a.x <= b.x)
             {
+                if(a.x == b.x)
+                {
+                    if(a.y < b.y)
+                    {
+                        return true;
+                    }
+                    return false;
+                }
                 return true;
             }
+            return false;
         }
+        return true;
     }
-
     return false;
-
 }
-
 void bfs()
 {
-    int time = 0;
-    int eat_count = 0;
-    while(!q.empty())
+
+    while(1)
     {
-        int size = q.size();
-        int x = q.front().x;
-        int y = q.front().y;
-        int s = q.front().s;
-        int t = q.front().t;
-        int e = q.front().e;
-        q.pop();
+        v.clear();
+        memset(visit,false,sizeof(visit));
+        visit[q.front().x][q.front().y] = 1;
 
-        for(int i=0; i<size; i++)
+        while(!q.empty())
         {
-                for(int j=0; j<4; j++)
+            int x = q.front().x;
+            int y = q.front().y;
+            int t = q.front().t;
+            int s = q.front().s;
+            int e = q.front().e;
+            q.pop();
+
+            for(int i=0; i<4 ;i++)
+            {
+                int nx = x+dx[i];
+                int ny = y +dy[i];
+                if(nx>=0 && ny >=0 && nx<N && ny< N)
                 {
-                    int nx = x+ dx[j];
-                    int ny = y+ dy[j];
-
-                    if(nx>0 && ny>0 && nx<=N && ny<=N && s >= map[nx][ny] && !visit[nx][ny])
+                    if(!visit[nx][ny])
                     {
-                        visit[nx][ny] = true;
-                        q.push(fish(nx,ny,s,t+1,e));
+                        if(map[nx][ny] == 0 || map[nx][ny] == s)
+                        {
+                            visit[nx][ny] = 1;
+                            q.push(fish(nx,ny,t+1,s,e));
+                        }
+                        else if(map[nx][ny] < s)
+                        {
+                            visit[nx][ny] = 1;
+                            v.push_back(fish(nx,ny,t+1,s,e+1));
+                        }
                     }
-                }
 
+                }
+            }
         }
+
+        if(v.size() == 0)
+        {
+            return;
+        }
+
+        sort(v.begin(),v.end(),compare);
+        if(v[0].s == v[0].e)
+        {
+            v[0].s ++;
+            v[0].e = 0;
+        }
+
+        map[v[0].x][v[0].y] = 0;
+
+        ans += v[0].t;
+
+        q.push(fish(v[0].x,v[0].y,0,v[0].s,v[0].e));
     }
 }
-
-
 
 int main()
 {
 
-
-    for(int i=0; i<100; i++)
-    {
-
-        for(int j=0; j<100; j++)
-        {
-            cout << i << " " << j << endl;
-        }
-        cout << endl;
-    }
-
-
-
-
     cin >> N;
 
 
-
-
-    for(int i=1; i<=N; i++)
+    for(int i= 0; i<N; i++)
     {
-        for(int j=1; j<=N; j++)
+        for(int j=0; j<N; j++)
         {
             cin >> map[i][j];
-
             if(map[i][j] == 9)
             {
-                q.push(fish(i,j,2,0,0));
+                q.push(fish(i,j,0,2,0));
                 map[i][j] = 0;
-                visit[i][j] = true;
             }
-
-
         }
     }
 
-    sort(pos.begin(),pos.end(),compare);
-
-    memset(visit,false,sizeof(visit));
-    cout << q.size() << endl;
 
     bfs();
 
-    cout << ans << endl;
-
-
-
+    cout << ans;
 
     return 0;
 }
