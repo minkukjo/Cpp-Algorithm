@@ -1,39 +1,38 @@
-//
-// Created by ì¡°ë¯¼êµ­ on 09/01/2019.
-//
-// ë‚˜ëŠ” DPì— ì•½í•œë“¯
-// DP ì—°ìŠµì„ ì¢€ ë” í•´ì•¼ê² ë‹¤.
-
 #include <iostream>
 
 using namespace std;
 
-
 int main()
 {
-    int t;
-    cin>> t;
-    while(t--)
-    {
-        int N,M;
-        cin >> N >> M;
-        int dp[31][31] = {0};
-        for(int i=1; i<=M; i++)
-        {
-            dp[1][i] = i;
-        }
+	int T;
+	scanf("%d", &T);
 
-        for(int i=2; i<=N; i++)
-        {
-            for(int j=i; j<=M; j++)
-            {
-                for(int k=j; k>=i; k--)
-                {
-                    dp[i][j] += dp[i-1][k-1];
-                }
-            }
-        }
-        cout << dp[N][M] << endl;
-    }
-    return 0;
+	while (T--)
+	{
+		int N, M;
+		int DP[31][31] = { 0, };
+
+		cin >> N >> M;
+		// N°³ÀÇ »çÀÌÆ®¿Í M°³ÀÇ »çÀÌÆ®¸¦ ÀÕ´Â °æ¿ìÀÇ ¼ö
+		// ¿©±â¼­´Â 1°³ÀÇ »çÀÌÆ®¿Í M°³ÀÇ »çÀÌÆ®¸¦ ÀÕ´Â °æ¿ìÀÇ ¼ö¸¦ ¹Ì¸® Ã£¾Æ³õÀ½
+		for (int i = 1; i <= M; i++)
+		{
+			DP[1][i] = i;
+		}
+
+		for (int i = 2; i <= N; i++)
+		{
+			for (int j = i; j <= M; j++)
+			{
+				for (int k = j; k >= i; k--)
+				{
+					DP[i][j] += DP[i - 1][k - 1];
+				}
+			}
+		}
+
+		cout << DP[N][M] << endl;
+
+	}
+	return 0;
 }
