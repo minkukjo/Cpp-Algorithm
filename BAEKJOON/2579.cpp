@@ -1,42 +1,29 @@
-//
-// Created by 조민국 on 2019-01-14.
-//
-
-// 또 DP에서 깨짐 좀 더 공부해봐야함 분석
-
 #include <iostream>
-#include <vector>
-#include <cmath>
-
+#include <algorithm>
 using namespace std;
 
-int dp[301][3];
+int A[301];
+int DP[301];
 
 int main()
 {
-    int n;
-    cin >> n;
-    vector<int> stair;
-    int score = 0;
-    stair.push_back(0);
-    for(int i=1; i<=n; i++)
-    {
-        cin>>score;
-        stair.push_back(score);
-    }
+	int N;
+	cin >> N;
 
-    dp[1][1] = stair[1];
-    dp[1][2] = stair[1];
-    for(int i=2; i<=n; i++)
-    {
-        dp[i][1] = dp[i-1][2] + stair[i];
-        dp[i][2] = max(dp[i-2][1],dp[i-2][2]) + stair[i];
-    }
+	for (int i = 1; i <= N; i++)
+	{
+		cin >> A[i];
+	}
+	
+	DP[1] = A[1];
+	DP[2] = max(A[1] + A[2], A[2]);
+	DP[3] = max(A[1] + A[3], A[2] + A[3]);
+	for (int i = 4; i <= N; i++)
+	{
+		DP[i] = max(DP[i - 2] + A[i], A[i - 1] + A[i] + DP[i - 3]);
+	}
 
-    cout << max(dp[n][1],dp[n][2]);
+	cout << DP[N] << endl;
 
-
-
-
-    return 0;
+	return 0;
 }
